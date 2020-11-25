@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;light&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" type="image/png" href="/img/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="LiHongjie">
+  <meta name="keywords" content="">
+  <title>刷题入门指南 - Codingwhip</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.1.2/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":false,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":"8fa9d0d4bf19affcb4121610a39bf244","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>CodingWhip</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/shuati">
+                <i class="iconfont icon-leetcode"></i>
+                一起刷题吧
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="刷题入门指南">
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="page-content">
+  <h3 id="我们为什么要刷题？"><a href="#我们为什么要刷题？" class="headerlink" title="我们为什么要刷题？"></a>我们为什么要刷题？</h3><ul>
+<li>提升个人的软件基础修养，会些数据结构和算法，代码写出来会好很多。</li>
+<li>面试一定会问。我就没有见过面试不问数据结构和算法的。</li>
+</ul>
+<h3 id="刷题到底有没有用？"><a href="#刷题到底有没有用？" class="headerlink" title="刷题到底有没有用？"></a>刷题到底有没有用？</h3><p>我们大学的时候，学习的更多的是偏理论的。随便拿一个题目出来， 没有刷过题的基本上都是做不出来的，但是一看答案，哦原来如此。 其实这就是因为没有刷过题。 如果你高中的时候数学只学了一些概念，都不做题的话，就去高考，你觉得自己能考得好吗？ 这是不可能的。刷题可以让你学习的理论能够运用到具体的实战中去。</p>
+<h3 id="那要到哪里去刷题呢？"><a href="#那要到哪里去刷题呢？" class="headerlink" title="那要到哪里去刷题呢？"></a>那要到哪里去刷题呢？</h3><p>推荐一个刷题网站：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/">leetcode中国站</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/">leetcode国际站</a></li>
+</ul>
+<p>在 <code>leetcode中国站</code> 刷题，因为国内访问速度更快。</p>
+<p>在 <code>leetcode国际站</code> 看题解，因为国外的题解质量更高，不过是英文的。</p>
+<p>另外，不推荐传统的 OJ 平台，因为太难用了，对新手来说太难了，也不友好。</p>
+<ul>
+<li>只告诉你错了，却不告诉你哪个测试用例错了。</li>
+<li>需要自己从终端读取数据作为输入，有的数据输入是很难处理的。</li>
+<li>题目没有区分简单、中等、困难，不利于渐进式学习。很多时候， 对于我们做应用软件开发，会做简单的题目就够了，而困难的题目更多是竞赛才需要的。</li>
+</ul>
+<h3 id="要怎么正确的刷题？"><a href="#要怎么正确的刷题？" class="headerlink" title="要怎么正确的刷题？"></a>要怎么正确的刷题？</h3><p><strong>五遍刷题法</strong>：</p>
+<ul>
+<li>自己先思考 5 分钟，有想法自己先做一遍。没有想法就直接看题解，看懂之后做一遍。</li>
+<li>没有想法看题解的话，要自己不看题解再做一遍。</li>
+<li>第二天再做一遍。</li>
+<li>一个星期之后再做一遍。</li>
+<li>面试的前一个星期再做一遍。</li>
+</ul>
+<p><strong>五遍刷题法</strong>的核心思想在于过遍数，你一天刷个几百遍是没有用的，要每隔一段时间就刷一遍。 因为这是符合人类的遗忘曲线的，也叫做“艾宾浩斯记忆曲线”。</p>
+<p><strong>刷题最大误区</strong></p>
+<ul>
+<li>刷题只刷一遍。刷一遍是远远不够的。</li>
+<li>我要自己想出题目的解法。很多题目你要是能自己想出来的话， 你都可以拿图灵奖了，醒醒吧少年。</li>
+</ul>
+<p>估计有的同学对于这个观点不是很赞同。自己以前一直都是想要自己去想题目的解决方法， 结果可想而知，自然是碰到了很多的困难和挫折。 因为很多的算法，比如 KMP，你要是能自己想出来，简直逆天了都。 所以学算法的第一步就是要先清楚的给自己划定一条边界： 你是要学习算法而不是要去发明创造一个新的算法。其实也很容易理解， 你要是没有学习过加减乘除，让你自己去发明加减乘除，试问又有几个人能够办到。 我们更多的时候，是站在前人的基础上。牛顿曾说过:</p>
+<p>“我之所以能成功，是因为我站在巨人的肩膀上”</p>
+<p>所以对于我们普通人而言，你更多的是需要认真学习。</p>
+<hr>
+<h3 id="来看看我的刷题记录吧"><a href="#来看看我的刷题记录吧" class="headerlink" title="来看看我的刷题记录吧"></a><a href="/posts/fe644ae0">来看看我的刷题记录吧</a></h3>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+    
+  </div>
+  
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">津ICP备19003839号</a>
+    
+  </div>
+
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.5.3/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.3.0/anchor.min.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
